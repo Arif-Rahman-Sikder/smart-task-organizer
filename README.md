@@ -1,7 +1,7 @@
-Task Management System 🚀
+Smart Task Organizer 🚀
 Project Description 📝
-The Task Management System is a console-based C++ application designed to manage tasks and employees within an organization. This project was created to learn and demonstrate Object-Oriented Programming (OOP) concepts in C++ from scratch. It focuses on applying key OOP principles such as encapsulation 🔒, inheritance 🌳, polymorphism 🔄, and abstraction 🧠 to build a robust and extensible system. The application allows users to add tasks and employees, assign tasks to employees, mark tasks as completed, and display task and employee information. 🎯
-The system is built with modularity in mind, making it easy to extend with additional features or task types. It includes input validation to ensure data integrity and provides a user-friendly command-line interface for interaction. 💻
+The Smart Task Organizer is a console-based C++ application designed to manage tasks and employees within an organization. This project was created to learn and demonstrate Object-Oriented Programming (OOP) concepts in C++ from scratch. It focuses on applying key OOP principles such as encapsulation 🔒, inheritance 🌳, polymorphism 🔄, and abstraction 🧠 to build a robust and extensible system. The application allows users to add tasks and employees, assign tasks to employees, mark tasks as completed, and display task and employee information. 🎯
+The system is built with modularity in mind, making it easy to extend with additional features or task types. It includes input validation to ensure data integrity and provides a user-friendly command-line interface with colorful output for interaction. 💻
 Learning Objectives 🎓
 This project was developed to:
 
@@ -34,7 +34,7 @@ Prevents empty descriptions or names. 🚫
 
 
 User Interface:
-Interactive menu-driven console interface. 🖱️
+Interactive menu-driven console interface with colorful prompts and error messages. 🖱️
 Clear error messages for invalid inputs. ⚠️
 
 
@@ -123,6 +123,8 @@ Helper Functions 🛠️
 bool isValidPriority(string prio): Validates if the priority is "Low," "Medium," or "High." 🎚️
 bool isValidId(string input, int& id): Validates if the input is a positive integer ID. 🔢
 int getUserChoice(): Displays the menu and retrieves the user's choice. 📋
+void displayWelcomeMessage(): Displays a colorful welcome message at program start. 🚀
+void enableAnsiSupport(): Enables ANSI escape codes for Windows terminals. 🖥️
 int main(): Entry point, runs the interactive menu loop. 🚪
 
 Dependencies 📦
@@ -136,14 +138,18 @@ C++ Standard Library:
 <iomanip>: For formatted output (e.g., setw). 📏
 
 
+Windows-specific:
+<windows.h>: For enabling ANSI escape code support on Windows. 🖥️
+
+
 
 How to Run 🏃
 
 Clone the repository from GitHub. 📥
-Compile the code using a C++ compiler (e.g., g++):g++ -o task_manager main.cpp
+Compile the code using a C++ compiler (e.g., g++):g++ -o smart_task_organizer main.cpp
 
 
-Run the executable:./task_manager
+Run the executable:./smart_task_organizer
 
 
 Follow the interactive menu to manage tasks and employees. 🖱️
@@ -163,4 +169,4 @@ Add task deadlines and sorting by priority or deadline. ⏰
 Enhance the user interface (e.g., GUI or better console formatting). 🖼️
 
 License 📜
-This project is licensed under the MIT License. 🗳️# smart-task-organizer
+This project is licensed under the MIT License. 🗳️
